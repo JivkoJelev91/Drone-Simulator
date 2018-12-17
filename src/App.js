@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Buttons from './Buttons/Buttons';
+import Battery from './Buttons/Battery';
 import Drone from './Drone'
 import './App.css';
 
@@ -9,7 +10,10 @@ class App extends Component {
     return (
       <div className="App">
           <Buttons />
-          <Drone />
+          <div>
+            <Battery />
+            <Drone />
+          </div>
       </div>
     );
   }
