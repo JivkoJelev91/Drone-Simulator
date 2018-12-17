@@ -1,4 +1,7 @@
-// import styled from 'styled-components';
+import styled from 'styled-components';
+import React, { Component } from 'react';
+import Commands from './Commands.js'
+
 
 const CommandGrid = styled.div`
   display: grid;
@@ -73,18 +76,18 @@ const CommandGrid = styled.div`
 // }
 
 const amount = 100;
-const Commands = () => (
+const Buttons = () => (
   <CommandGrid>
-    <button className="rotate" onClick={console.log('works')}>
+    <button className="rotate" onClick={Commands.rotate}>
       <span className="symbol">⟲</span> 90°
     </button>
-    <button onClick={(`forward ${amount}`)}>
+    <button onClick={console.log('works')}>
       <span className="symbol">↑</span> forward {amount}cm
     </button>
     <button className="rotate" onClick={console.log('works')}>
       <span className="symbol">⟳</span> 15°
     </button>
-    <button onClick={(`left ${amount}`)}>
+    <button onClick={console.log('works')}>
       <span className="symbol">←</span> left {amount}cm
     </button>
     <div className="center">
@@ -123,4 +126,4 @@ const Commands = () => (
   </CommandGrid>
 );
 
-export default Commands;
+export default Buttons;
