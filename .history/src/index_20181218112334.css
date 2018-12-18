@@ -36,11 +36,13 @@ code {
 
 .batteryStyles{
   width: 10%;
+  --color: '#bb0707';
   border: 2px solid black;
   border-radius: 5px;
   overflow: hidden;
   display: flex;
   flex-direction: column-reverse;
+  background-color: '#bb0707';
 }
 
 .batteryLevel {

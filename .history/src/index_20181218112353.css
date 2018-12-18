@@ -41,6 +41,7 @@ code {
   overflow: hidden;
   display: flex;
   flex-direction: column-reverse;
+  background-color: '#bb0707';
 }
 
 .batteryLevel {

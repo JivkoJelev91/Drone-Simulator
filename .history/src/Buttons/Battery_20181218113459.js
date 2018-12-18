@@ -13,8 +13,10 @@ class Battery extends Component {
 
   lowBattery = () => {
       this.setState({
-        batteryLevel: parseInt((10000 - ++this.counter) / 100)
-      });
+        batteryLevel: parseInt((10000 - this.counter++) / 100)
+      })
+      console.log(this.state.batteryLevel);
+      console.log((10000 - this.counter++) / 100);
   }
 
   componentDidMount() {
