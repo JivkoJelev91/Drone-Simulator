@@ -31,15 +31,6 @@ export default {
     flipBack(){
         return console.log('flipBack');
     },
-    hight(){
-        return console.log('hight');
-    },
-    low(){
-        return console.log('low');
-    },
-    land(){
-        return console.log('land');
-    },
     emergency(){
         return console.log('emergency');
     },

@@ -105,13 +105,13 @@ const Buttons = () => (
       <span className="symbol">→</span>
       right {amount}cm
     </button>
-    <button className="height" onClick={Commands.hight}>
+    <button className="height" onClick={console.log('works')}>
       <span className="symbol">⤒</span> {amount}cm
     </button>
     <button onClick={Commands.back}>
       <span className="symbol">↓</span> back {amount}cm
     </button>
-    <button className="height" onClick={Commands.low}>
+    <button className="height" onClick={console.log('works')}>
       <span className="symbol">⤓</span> {amount}cm
     </button>
     <h2>Fancy Pants</h2>

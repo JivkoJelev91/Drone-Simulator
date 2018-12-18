@@ -105,13 +105,13 @@ const Buttons = () => (
       <span className="symbol">→</span>
       right {amount}cm
     </button>
-    <button className="height" onClick={Commands.hight}>
+    <button className="height" onClick={console.log('works')}>
       <span className="symbol">⤒</span> {amount}cm
     </button>
     <button onClick={Commands.back}>
       <span className="symbol">↓</span> back {amount}cm
     </button>
-    <button className="height" onClick={Commands.low}>
+    <button className="height" onClick={console.log('works')}>
       <span className="symbol">⤓</span> {amount}cm
     </button>
     <h2>Fancy Pants</h2>
@@ -119,8 +119,8 @@ const Buttons = () => (
     <button onClick={Commands.flipRight}>Flip Right</button>
     <button onClick={Commands.flipBack}>Flip Back</button>
     <button onClick={Commands.flipForward}>Flip Forward</button>
-    <button onClick={console.log('TODO')}>Go 25 25 25 25</button>
-    <button onClick={console.log('TODO')}>
+    <button onClick={console.log('works')}>Go 25 25 25 25</button>
+    <button onClick={console.log('works')}>
       Curve!
     </button>
   </CommandGrid>
