@@ -5,7 +5,14 @@ export default {
         return console.log('rotate!!');
     },
     forward(){
-       
+        let result;
+        
+        clearInterval(interval);
+        let interval = setInterval(() => {
+            let seconds = new Date().getSeconds();
+            console.log(seconds);
+            if(seconds == 59)clearInterval(interval);
+        }, 1000);
     },
     back(){
         return console.log('back');

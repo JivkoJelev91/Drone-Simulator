@@ -5,7 +5,7 @@ export default {
         return console.log('rotate!!');
     },
     forward(){
-       
+        return console.log('forward');
     },
     back(){
         return console.log('back');

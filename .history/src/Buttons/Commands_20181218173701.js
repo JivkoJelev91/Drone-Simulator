@@ -5,7 +5,10 @@ export default {
         return console.log('rotate!!');
     },
     forward(){
-       
+        let seconds = new Date().getSeconds();
+        setInterval(() => {
+            console.log(seconds);
+        }, 1000)
     },
     back(){
         return console.log('back');

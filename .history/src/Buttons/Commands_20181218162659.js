@@ -5,7 +5,7 @@ export default {
         return console.log('rotate!!');
     },
     forward(){
-       
+        return console.log('forward');
     },
     back(){
         return console.log('back');
@@ -45,4 +45,6 @@ export default {
     },
 }
 
+// transform: translateZ(150px) rotateY(  90deg); 
+// transition: transform 1s;
 

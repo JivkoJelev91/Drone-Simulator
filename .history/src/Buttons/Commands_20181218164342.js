@@ -4,8 +4,13 @@ export default {
     rotate(){
         return console.log('rotate!!');
     },
-    forward(){
-       
+    forward(counter){
+        //  let interval = setInterval(() => {
+        //     counter++
+        //  }, 1000);
+         console.log(counter);
+         if(counter == 100) clearInterval(interval);
+
     },
     back(){
         return console.log('back');

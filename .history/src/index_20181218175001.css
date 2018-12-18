@@ -57,6 +57,7 @@ code {
   background: #70ff00;
 }
 
+
 .CommandGrid{
   display: grid;
   grid-template-columns: 1fr 1.25fr 1fr;
