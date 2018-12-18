@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import dronePic from './images/drone.png'
+import styled from 'styled-components';
+
 
 class Drone extends Component {
   constructor(){
@@ -8,7 +10,7 @@ class Drone extends Component {
   }
   render() {
     return (
-    <div className="parentDrone">
+    <div>
       <div className="drone">
         <img src={dronePic} alt="drone"/>
       </div>

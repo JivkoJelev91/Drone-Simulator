@@ -8,6 +8,7 @@ const BatteryStyles = styled.div`
   border-radius: 5px;
   overflow: hidden;
   display: flex;
+  height:100%;
   flex-direction: column-reverse;
   /* box-shadow: 0 0 10px var(--color); */
   background: #c5c5c5;

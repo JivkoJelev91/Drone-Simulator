@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import React  from 'react';
 
 const BatteryStyles = styled.div`
-  width: 10%;
+  width: 100%;
   --color: '#bb0707';
   border: 2px solid black;
   border-radius: 5px;
@@ -21,7 +21,7 @@ const BatteryStyles = styled.div`
   }
 `;
 
-const Battery = () => (
+const Battery = props => (
   <BatteryStyles>
     <span className="batteryLevel">60%</span>
   </BatteryStyles>

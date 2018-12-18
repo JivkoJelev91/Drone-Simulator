@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import React  from 'react';
 
 const BatteryStyles = styled.div`
-  width: 10%;
+  width: 100%;
   --color: '#bb0707';
   border: 2px solid black;
   border-radius: 5px;

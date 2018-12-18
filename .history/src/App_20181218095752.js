@@ -5,15 +5,19 @@ import Drone from './Drone'
 import styled from 'styled-components';
 import './App.css';
 
+const View = styled.div`
+  display:flex;
+`;
+
 class App extends Component {
   render() {
     return (
       <div className="App">
           <Buttons />
-          <div className="view">
+          <View>
             <Battery />
             <Drone />
-          </div>
+          </View>
       </div>
     );
   }

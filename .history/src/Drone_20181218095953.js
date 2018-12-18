@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import dronePic from './images/drone.png'
 
+import styled from 'styled-components';
+
+const DroneStyle = styled.parentDrone`
+  position:relative
+`;
+
 class Drone extends Component {
-  constructor(){
-    super()
-    this.state = {loading: 60};
-  }
   render() {
     return (
     <div className="parentDrone">

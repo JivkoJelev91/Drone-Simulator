@@ -1,6 +1,19 @@
 import React, { Component } from 'react';
 import dronePic from './images/drone.png'
 
+import styled from 'styled-components';
+
+function getWidth() {
+  return 20;
+}
+
+const DroneStyle = styled.div`
+  position:relative
+  width:${getWidth()}%
+`;
+
+
+
 class Drone extends Component {
   constructor(){
     super()
@@ -8,11 +21,11 @@ class Drone extends Component {
   }
   render() {
     return (
-    <div className="parentDrone">
+    <DroneStyle>
       <div className="drone">
         <img src={dronePic} alt="drone"/>
       </div>
-    </div>
+    </DroneStyle>
     );
   }
 }

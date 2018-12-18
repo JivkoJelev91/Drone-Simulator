@@ -15,21 +15,16 @@ code {
 
 .view{
   display:flex;
-  padding-top:2%;
-
+  padding-top:2%
 }
 
-.parentDrone{
-  width:100%;
-  padding-top: 10%;
-  display:flex;
-  justify-content: center;
-}
+
 
 .drone img {
   width: 100%;
 }
 
 .drone{
-  width:10%;
+  width:90%;
+  margin:0 auto;
 }

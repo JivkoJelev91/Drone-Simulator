@@ -8,7 +8,7 @@ class Drone extends Component {
   }
   render() {
     return (
-    <div className="parentDrone">
+    <div>
       <div className="drone">
         <img src={dronePic} alt="drone"/>
       </div>

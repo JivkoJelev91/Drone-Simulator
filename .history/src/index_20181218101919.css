@@ -16,14 +16,6 @@ code {
 .view{
   display:flex;
   padding-top:2%;
-
-}
-
-.parentDrone{
-  width:100%;
-  padding-top: 10%;
-  display:flex;
-  justify-content: center;
 }
 
 .drone img {
@@ -31,5 +23,7 @@ code {
 }
 
 .drone{
-  width:10%;
+  width:90%;
+  position: absolute;
+  
 }
