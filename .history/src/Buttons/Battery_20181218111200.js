@@ -7,12 +7,13 @@ class Battery extends Component {
       batteryLevel: 10000
     }
     this.countdown = null;
-    this.counter = 0;
   }
 
   lowBattery = () => {
+      // if(result == 0) clearInterval(interval);
+      let seconds = new Date().getSeconds();
       this.setState({
-        batteryLevel: ((10000 - this.counter++) / 100).toFixed(0)
+        batteryLevel: 10000 - seconds
       })
   }
 
@@ -23,6 +24,7 @@ class Battery extends Component {
   componentWillUnmount() {
     if(this.batteryLevel === 0) clearInterval(this.countdown);
   }
+
 
   render() {
     return (

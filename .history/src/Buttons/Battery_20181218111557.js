@@ -12,8 +12,11 @@ class Battery extends Component {
 
   lowBattery = () => {
       this.setState({
-        batteryLevel: ((10000 - this.counter++) / 100).toFixed(0)
+        batteryLevel: 10000 - this.counter++
       })
+      console.log(this.state.batteryLevel);
+      console.log((this.state.batteryLevel / 100).toFixed(0));
+      console.log(this.counter);
   }
 
   componentDidMount() {
@@ -24,10 +27,11 @@ class Battery extends Component {
     if(this.batteryLevel === 0) clearInterval(this.countdown);
   }
 
+
   render() {
     return (
       <div className="batteryStyles">
-          <span className="batteryLevel">{this.state.batteryLevel}%</span>
+          <span className="batteryLevel">{(this.state.batteryLevel / 100).toFixed(0)}%</span>
       </div>
     );
   }

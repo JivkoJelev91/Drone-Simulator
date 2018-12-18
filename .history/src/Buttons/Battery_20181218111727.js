@@ -12,7 +12,7 @@ class Battery extends Component {
 
   lowBattery = () => {
       this.setState({
-        batteryLevel: ((10000 - this.counter++) / 100).toFixed(0)
+        batteryLevel: (10000 - this.counter++ / 100).toFixed(0)
       })
   }
 

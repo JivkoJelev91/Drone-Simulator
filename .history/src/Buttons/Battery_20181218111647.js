@@ -12,8 +12,9 @@ class Battery extends Component {
 
   lowBattery = () => {
       this.setState({
-        batteryLevel: ((10000 - this.counter++) / 100).toFixed(0)
+        batteryLevel: 10000 - this.counter++
       })
+      return (this.state.batteryLevel / 100).toFixed(0);
   }
 
   componentDidMount() {
@@ -27,7 +28,7 @@ class Battery extends Component {
   render() {
     return (
       <div className="batteryStyles">
-          <span className="batteryLevel">{this.state.batteryLevel}%</span>
+          <span className="batteryLevel">{this.lowBattery}%</span>
       </div>
     );
   }
