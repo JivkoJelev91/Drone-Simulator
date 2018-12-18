@@ -4,7 +4,6 @@ import dronePic from './images/drone.png'
 class Drone extends Component {
   constructor(){
     super()
-    this.state = {loading: 60};
   }
   render() {
     return (

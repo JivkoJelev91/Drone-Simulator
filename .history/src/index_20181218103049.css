@@ -16,10 +16,14 @@ code {
 .view{
   display:flex;
   padding-top:2%;
+
 }
 
 .parentDrone{
   width:100%;
+  padding-top: 10%;
+  display:flex;
+  justify-content: center;
 }
 
 .drone img {
@@ -27,6 +31,25 @@ code {
 }
 
 .drone{
-  width:20%;
-  margin:0 auto;
+  width:10%;
+}
+
+.batteryStyles{
+  width: 10%;
+  --color: '#bb0707';
+  border: 2px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+  background: #c5c5c5;
+}
+
+.batteryLevel {
+  transition: all 0.5s;
+  height: 100%;
+  text-align: center;
+  color: white;
+  display: block;
+  background: var(--color);
 }

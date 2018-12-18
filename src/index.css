@@ -33,3 +33,23 @@ code {
 .drone{
   width:10%;
 }
+
+.batteryStyles{
+  width: 10%;
+  --color: '#bb0707';
+  border: 2px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+  background: #70ff00;
+}
+
+.batteryLevel {
+  transition: all 0.5s;
+  height: 100%;
+  text-align: center;
+  color: white;
+  display: block;
+  background: var(--color);
+}

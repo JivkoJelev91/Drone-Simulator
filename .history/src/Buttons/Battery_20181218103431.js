@@ -4,7 +4,7 @@ class Battery extends Component {
   constructor(){
     super();
     this.state = {
-      batteryLevel: 100
+      batteryLevel: 60
     }
   }
   render() {
