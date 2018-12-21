@@ -8,10 +8,9 @@ class Buttons extends Component{
     this.amount = 100;
     this.counter = 0;
     this.state = {
-      bottom: 20,
-      left:45,
-      right:45,
-      direction: "",
+      forward: 20,
+      left:0,
+      right:0,
       isActive: true,
     }
   }
@@ -22,34 +21,25 @@ class Buttons extends Component{
 
   flyForward = () => {
     this.setState({
-      bottom: 60,
-      isActive: false,
-      direction: 'bottom'
+      forward: 50,
+      isActive: false
     })
     setTimeout( async () => {
-      await this.setState({bottom: 20});
-      await this.setState({isActive: true});
+      await this.setState({forward: 20})
+      await this.setState({isActive: true})
     }, 2000);
-  }
-
-  left = () => {
-    this.setState({
-      left: 0,
-      isActive: false,
-      direction: 'left'
-    })
-  }
-
-  right = () => {
-    this.setState({
-      right: 0,
-      isActive: false,
-      direction: 'right'
-    })
   }
 
   back(){
       return console.log('back');
+  }
+
+  left(){
+      return console.log('left');
+  }
+
+  right(){
+      return console.log('right');
   }
 
   takeOff(){
@@ -103,7 +93,7 @@ class Buttons extends Component{
         <button className="rotate" onClick={this.rotate}>
           <span className="symbol">⟳</span> 15°
         </button>
-        <button onClick={this.left} className={!this.state.isActive ? 'innactiveBtns' : null}>
+        <button onClick={this.left}>
           <span className="symbol">←</span> left {this.amount}cm
         </button>
         <div className="center">
@@ -117,7 +107,7 @@ class Buttons extends Component{
             !! emergency !!
           </button>
         </div>
-        <button onClick={this.right} className={!this.state.isActive ? 'innactiveBtns' : null}>
+        <button onClick={this.right}>
           <span className="symbol">→</span>
           right {this.amount}cm
         </button>

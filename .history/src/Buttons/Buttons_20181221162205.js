@@ -34,13 +34,13 @@ class Buttons extends Component{
 
   left = () => {
     this.setState({
-      left: 0,
+      left: 10,
       isActive: false,
       direction: 'left'
     })
   }
 
-  right = () => {
+  right = () =>{
     this.setState({
       right: 0,
       isActive: false,
@@ -117,7 +117,7 @@ class Buttons extends Component{
             !! emergency !!
           </button>
         </div>
-        <button onClick={this.right} className={!this.state.isActive ? 'innactiveBtns' : null}>
+        <button onClick={this.right}>
           <span className="symbol">→</span>
           right {this.amount}cm
         </button>

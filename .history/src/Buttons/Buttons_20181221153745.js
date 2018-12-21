@@ -8,9 +8,9 @@ class Buttons extends Component{
     this.amount = 100;
     this.counter = 0;
     this.state = {
-      bottom: 20,
+      forward: 20,
       left:45,
-      right:45,
+      right:0,
       direction: "",
       isActive: true,
     }
@@ -22,30 +22,26 @@ class Buttons extends Component{
 
   flyForward = () => {
     this.setState({
-      bottom: 60,
+      forward: 60,
       isActive: false,
-      direction: 'bottom'
+      direction: 'forward'
     })
     setTimeout( async () => {
-      await this.setState({bottom: 20});
+      await this.setState({forward: 20});
       await this.setState({isActive: true});
     }, 2000);
   }
 
   left = () => {
     this.setState({
-      left: 0,
+      left: 10,
       isActive: false,
       direction: 'left'
     })
   }
 
-  right = () => {
-    this.setState({
-      right: 0,
-      isActive: false,
-      direction: 'right'
-    })
+  right(){
+      return console.log('right');
   }
 
   back(){
@@ -117,7 +113,7 @@ class Buttons extends Component{
             !! emergency !!
           </button>
         </div>
-        <button onClick={this.right} className={!this.state.isActive ? 'innactiveBtns' : null}>
+        <button onClick={this.right}>
           <span className="symbol">→</span>
           right {this.amount}cm
         </button>

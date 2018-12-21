@@ -3,6 +3,7 @@ import dronePic from '../images/drone.png'
 
 function Drone(props) {
   const styles = (direction, value) => {
+    console.log(direction);
     return {
       [direction]: `${value}%`,
       transition: `${direction} 1.2s ease-in`,

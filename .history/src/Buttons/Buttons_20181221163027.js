@@ -117,7 +117,7 @@ class Buttons extends Component{
             !! emergency !!
           </button>
         </div>
-        <button onClick={this.right} className={!this.state.isActive ? 'innactiveBtns' : null}>
+        <button onClick={this.right}>
           <span className="symbol">→</span>
           right {this.amount}cm
         </button>

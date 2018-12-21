@@ -23,27 +23,27 @@ class Buttons extends Component{
   flyForward = () => {
     this.setState({
       bottom: 60,
-      isActive: false,
+      // isActive: false,
       direction: 'bottom'
     })
     setTimeout( async () => {
       await this.setState({bottom: 20});
-      await this.setState({isActive: true});
+      // await this.setState({isActive: true});
     }, 2000);
   }
 
   left = () => {
     this.setState({
-      left: 0,
-      isActive: false,
+      left: 10,
+      // isActive: false,
       direction: 'left'
     })
   }
 
-  right = () => {
+  right(){
     this.setState({
-      right: 0,
-      isActive: false,
+      right: 10,
+      // isActive: false,
       direction: 'right'
     })
   }
@@ -117,7 +117,7 @@ class Buttons extends Component{
             !! emergency !!
           </button>
         </div>
-        <button onClick={this.right} className={!this.state.isActive ? 'innactiveBtns' : null}>
+        <button onClick={this.right}>
           <span className="symbol">→</span>
           right {this.amount}cm
         </button>

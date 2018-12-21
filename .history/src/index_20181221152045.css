@@ -17,27 +17,26 @@ code {
   display:flex;
   padding-top:2%;
   width:100%;
-  box-sizing: border-box;
-  position: relative;
 }
 
 .parentDrone{
+  width:100%;
   padding-top: 10%;
   display:flex;
   justify-content: center;
   position: absolute;
   bottom:15%;
-  left:45%;
-  right:45%;
   /* transform: rotate(0deg);  */
 }
 
 .drone img {
   width: 100%;
+
 }
 
 .drone{
-  width:100px;
+  width:10%;
+
 }
 
 .batteryStyles{
