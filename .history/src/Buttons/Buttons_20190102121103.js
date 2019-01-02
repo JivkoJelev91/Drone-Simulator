@@ -91,7 +91,7 @@ class Buttons extends Component{
     if(this.state.direction === 'bottom'){
       this.setState({bottom: 20})
     }
-    return console.log('emergency');
+      return console.log('emergency');
   }
 
   render(){

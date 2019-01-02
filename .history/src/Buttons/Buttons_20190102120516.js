@@ -49,10 +49,11 @@ class Buttons extends Component{
   }
 
   back = () => {
+    this.setState({isActive: true});
       return console.log('back');
   }
 
-  takeOff = () => {
+  takeOff(){
       return console.log('takeOff');
   }
 
@@ -80,18 +81,12 @@ class Buttons extends Component{
       return console.log('low');
   }
 
-  land = () => {
-    if(this.state.direction === 'bottom'){
-      this.setState({bottom: 20})
-    }
-    return console.log('land');
+  land(){
+      return console.log('land');
   }
 
-  emergency = () => {
-    if(this.state.direction === 'bottom'){
-      this.setState({bottom: 20})
-    }
-    return console.log('emergency');
+  emergency(){
+      return console.log('emergency');
   }
 
   render(){

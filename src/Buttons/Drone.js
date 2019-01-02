@@ -8,7 +8,6 @@ function Drone(props) {
       transition: `${direction} 1.2s ease-in`,
     }
   }
-
   return (
     <div className="parentDrone" style={styles(props.state.direction, props.state[props.state.direction])}>
       <div className="drone" >

@@ -38,6 +38,9 @@ class Buttons extends Component{
       isActive: false,
       direction: 'left'
     });
+    setTimeout( async () => {
+      await this.setState({isActive: true});
+    }, 2000);
   }
 
   right = () => {
@@ -48,11 +51,11 @@ class Buttons extends Component{
     })
   }
 
-  back = () => {
+  back(){
       return console.log('back');
   }
 
-  takeOff = () => {
+  takeOff(){
       return console.log('takeOff');
   }
 
@@ -80,18 +83,12 @@ class Buttons extends Component{
       return console.log('low');
   }
 
-  land = () => {
-    if(this.state.direction === 'bottom'){
-      this.setState({bottom: 20})
-    }
-    return console.log('land');
+  land(){
+      return console.log('land');
   }
 
-  emergency = () => {
-    if(this.state.direction === 'bottom'){
-      this.setState({bottom: 20})
-    }
-    return console.log('emergency');
+  emergency(){
+      return console.log('emergency');
   }
 
   render(){
